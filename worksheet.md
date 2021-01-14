@@ -53,8 +53,8 @@ $ curl -H "Accept: application/json" https://icanhazdadjoke.com/
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [Mobile draft](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610635787/Dad%20Jokes/mobile_draft_khkxuy.png)
+
 
 
 ### MVP/PostMVP - 5min
