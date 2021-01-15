@@ -51,7 +51,7 @@ $ curl -H "Accept: application/json" https://icanhazdadjoke.com/
 
 ## Wireframes
 
-[Architecture](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Dad-Joke-Architecture_mwerkj.png)
+[Architecture](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610735366/Dad%20Jokes%20-%20Wireframes/Architecture_tbscc5.png)
 
 Mobile
 - [On Load](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Mobile-On-Load_uceshe.png)
@@ -90,7 +90,9 @@ Desktop
 | Component | Description | Page (Y/N) |
 | --- | :---: | --- | 
 | App | This will make the initial data pull and include React Router and the all of the other component| N |
+| Header | This will render the header | N |
 | Footer | This will render the footer | N |
+| Switch | This will render the welcome message | N |
 | Joke | This is where the joke will appear on screen after an action from the Search or Random component | Y |
 | Search | This will include a form and button where the user can enter a key word | Y |
 | Random | This will include a button that will fetch a random joke | Y |
@@ -101,7 +103,7 @@ Desktop
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Setting up component and route structure | H | 1 hr|  |  |
-| Building Footer | H | 1hr| |  |
+| Building Footer & Header | H | 1hr| |  |
 | Working with API to call Data | H | 3hrs| |  |
 | Building Random generator button | H | 4hrs| |  |
 | Destructuring random gen data to appear on Joke component | H | 2hrs| |  |
