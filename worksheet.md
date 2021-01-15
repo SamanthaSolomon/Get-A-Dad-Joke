@@ -51,11 +51,22 @@ $ curl -H "Accept: application/json" https://icanhazdadjoke.com/
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
+[Architecture](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Dad-Joke-Architecture_mwerkj.png)
 
-- [Mobile draft](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610635787/Dad%20Jokes/mobile_draft_khkxuy.png)
+Mobile
+- [On Load](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Mobile-On-Load_uceshe.png)
+- [Search Term](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Mobile-Search-Term_qo0giu.png)
+- [Random](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Mobile-Random-Joke_ue9kp7.png)
 
+Tablet
+- [On Load](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Tablet-On-Load_fvqmq0.png)
+- [Search Term](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Tablet-Search-Term_mqd82e.png)
+- [Random](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Random_jm2zou.png)
 
+Desktop
+- [On Load](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Desktop-On-Load_nirswe.png)
+- [Search Term](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Destop-Search-Term_azf7ou.png)
+- [Random](https://res.cloudinary.com/dcvgmixhx/image/upload/v1610733581/Dad%20Jokes%20-%20Wireframes/Random_jm2zou.png)
 
 ### MVP/PostMVP 
 
