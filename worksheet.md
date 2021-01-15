@@ -71,14 +71,14 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 #### PostMVP
 
-- ?
+- bootstrap carosel to hold searched jokes, instead of listing
+- Joke of the day generated on load with current date
 
 ## Components 
 
 | Component | Description | Page (Y/N) |
 | --- | :---: | --- | 
 | App | This will make the initial data pull and include React Router and the all of the other component| N |
-| Header | This will render the nav | N |
 | Footer | This will render the footer | N |
 | Joke | This is where the joke will appear on screen after an action from the Search or Random component | Y |
 | Search | This will include a form and button where the user can enter a key word | Y |
@@ -90,7 +90,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Setting up component and route structure | H | 1 hr|  |  |
-| Building Nav and Footer | H | 1hr| |  |
+| Building Footer | H | 1hr| |  |
 | Working with API to call Data | H | 3hrs| |  |
 | Building Random generator button | H | 4hrs| |  |
 | Destructuring random gen data to appear on Joke component | H | 2hrs| |  |
