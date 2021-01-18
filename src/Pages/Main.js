@@ -10,14 +10,10 @@ const Main = (props) => {
 //Searched Joke
   const [searchJoke, setSearchJoke] = React.useState(null)
 
-  const getSearched = async (searchTerm) => {
-    const response = await fetch(
-      `https://icanhazdadjoke.com/search`,
-      {headers: {page: 1, limit: 5, term: {searchTerm}}
-    })
-    
+  const getSearched = async (searchterm) => {
+    const response = await fetch(`https://icanhazdadjoke.com/search?term=${searchterm}`)
+
     const data = await response.json()
-    
     setSearchJoke(data)
   }
 
@@ -39,7 +35,7 @@ const Main = (props) => {
             Welcome to Get a Dad Joke! Where you can get your dad joke fix. Search for jokes by keyword or get a random joke.
             <SearchForm jokeSearch={getSearched}/>
             <RandomButton jokeRandom={getRandom}/>
-            <Joke joke={randomJoke}/>
+            <Joke randomJoke={randomJoke} searchJoke={searchJoke}/>
         </div>
     )
 }

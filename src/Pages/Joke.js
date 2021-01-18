@@ -4,8 +4,9 @@ const Joke = (props) => {
     return(
         <div>
             <p>Searched Joke</p>
+            <p>{props?.searchJoke?.joke}</p>
             <p>Random Joke</p>
-            <p>{props?.joke?.joke}</p>
+            <p>{props?.randomJoke?.joke}</p>
         </div>
     )
 }

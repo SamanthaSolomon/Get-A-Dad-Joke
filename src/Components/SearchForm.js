@@ -22,7 +22,7 @@ const SearchForm = (props) => {
                 type="text" 
                 name="searchterm"
                 onChange={handleChange}
-                value={formData.searchTerm}/>
+                value={formData.searchterm}/>
                 <input type="submit" value="Get A Joke"/>
             </form>
         </div>
