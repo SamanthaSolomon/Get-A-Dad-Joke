@@ -4,6 +4,8 @@ import React from "react"
 import SearchForm from "../Components/SearchForm"
 import RandomButton from "../Components/RandomButton"
 
+import Joke from "./Joke"
+
 const Main = (props) => {
 //Searched Joke
   const [searchJoke, setSearchJoke] = React.useState(null)
@@ -21,21 +23,23 @@ const Main = (props) => {
 
 
   //Random Joke
+  const [randomJoke, setRandomJoke]=React.useState(null)
+
   const getRandom= async () => {  
     const response = await fetch(`https://icanhazdadjoke.com`, {
       headers: {Accept: "application/json"}
     })
     const data = await response.json()
-    console.log('data-', data)
+    setRandomJoke(data)
   }
 
-  getRandom()
 
     return(
         <div>
             Welcome to Get a Dad Joke! Where you can get your dad joke fix. Search for jokes by keyword or get a random joke.
-            <SearchForm jokesearch={getSearched}/>
-            <RandomButton />
+            <SearchForm jokeSearch={getSearched}/>
+            <RandomButton jokeRandom={getRandom}/>
+            <Joke joke={randomJoke}/>
         </div>
     )
 }

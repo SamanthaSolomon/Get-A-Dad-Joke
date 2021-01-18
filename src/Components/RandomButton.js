@@ -1,9 +1,14 @@
 import React from "react"
 
-const RandomButton = () => {
+const RandomButton = (props) => {
+
+const handleClick = (event) => {
+    event.preventDefault()
+    props.jokeRandom()
+}   
     return (
         <div>
-            Random Button
+            <button onClick={handleClick}>Get Random Joke</button>
         </div>
     )
 }

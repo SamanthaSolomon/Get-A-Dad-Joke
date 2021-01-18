@@ -12,7 +12,7 @@ const SearchForm = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        props.jokesearch(formData.searchTerm)
+        props.jokeSearch(formData.searchTerm)
     }
 
     return(
