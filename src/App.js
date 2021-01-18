@@ -1,4 +1,5 @@
 import React from "react"
+import { Route, Switch } from "react-router-dom"
 
 //Styles
 import './App.css';
@@ -6,13 +7,11 @@ import './App.css';
 //Components
 import Footer from "./Components/Footer"
 import Header from "./Components/Header"
-import RandomButton from "./Components/RandomButton"
-import SearchForm from "./Components/SearchForm"
 
 //Pages
 import About from "./Pages/About"
 import Joke from "./Pages/Joke"
-import OnLoad from "./Pages/OnLoad"
+import Main from "./Pages/Main"
 
 function App() {
 
@@ -30,11 +29,17 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <About />
-      <OnLoad />
-      <Joke />
-      <SearchForm />
-      <RandomButton />
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route> 
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/joke">  
+          <Joke />
+        </Route>
+      </Switch> 
       <Footer />
     </div>
   );

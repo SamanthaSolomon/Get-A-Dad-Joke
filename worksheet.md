@@ -3,7 +3,7 @@
 ## Project Links
 
 - [GitHub Repo](https://github.com/SamanthaSolomon/project2)
-- Deployment link
+- [Deployment link](https://getadadjoke.netlify.app/)
 
 ## Project Description
 
@@ -92,7 +92,8 @@ Desktop
 | App | This will make the initial data pull and include React Router and the all of the other component| N |
 | Header | This will render the header | N |
 | Footer | This will render the footer | N |
-| Switch | This will render the welcome message | N |
+| Main | This will render the welcome message | N |
+| About| Summary of the app | Y |
 | Joke | This is where the joke will appear on screen after an action from the Search or Random component | Y |
 | Search | This will include a form and button where the user can enter a key word | Y |
 | Random | This will include a button that will fetch a random joke | Y |
@@ -102,7 +103,7 @@ Desktop
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Setting up component and route structure | H | 1 hr|  |  |
+| Setting up component and route structure | H | 1 hr| 1 hr | 1hr |
 | Building Footer & Header | H | 1hr| |  |
 | Working with API to call Data | H | 3hrs| |  |
 | Building Random generator button | H | 4hrs| |  |
