@@ -13,18 +13,7 @@ import About from "./Pages/About"
 import Joke from "./Pages/Joke"
 import Main from "./Pages/Main"
 
-function App() {
-
-  const getJoke= async () => {  
-    const response = await fetch(`https://icanhazdadjoke.com`, {
-      headers: {Accept: "application/json"}
-    })
-    const data = await response.json()
-    console.log('data-', data)
-  }
-
-  getJoke()
-
+function App(props) {
 
   return (
     <div className="App">

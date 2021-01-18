@@ -1,6 +1,6 @@
 import React from "react"
 
-const Joke = () => {
+const Joke = (props) => {
     return(
         <div>
             Joke appears in this component
