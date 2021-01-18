@@ -5,7 +5,7 @@ const Joke = (props) => {
         <div>
             <p>Searched Joke</p>
             <p>Random Joke</p>
-            <p>{props.joke}</p>
+            <p>{props?.joke?.joke}</p>
         </div>
     )
 }

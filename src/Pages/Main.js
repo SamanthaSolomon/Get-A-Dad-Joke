@@ -13,7 +13,7 @@ const Main = (props) => {
   const getSearched = async (searchTerm) => {
     const response = await fetch(
       `https://icanhazdadjoke.com/search`,
-      {headers: {limit: "5", term: {searchTerm}}
+      {headers: {page: 1, limit: 5, term: {searchTerm}}
     })
     
     const data = await response.json()
