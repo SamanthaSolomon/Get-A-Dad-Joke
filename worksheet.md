@@ -105,11 +105,11 @@ Desktop
 | --- | :---: |  :---: | :---: | :---: |
 | Setting up component and route structure | H | 1 hr| 1 hr | 1hr |
 | Building Footer & Header | H | 1hr| |  |
-| Working with API to call Data | H | 3hrs| |  |
-| Building Random generator button | H | 4hrs| |  |
-| Destructuring random gen data to appear on Joke component | H | 2hrs| |  |
-| Building search form and button | H | 4hrs|  |  |
-| Destructuring keyword data to appear on Joke component | H | 2hrs| |  |
+| Working with API to call Data | H | 3hrs| 2hrs |  |
+| Building Random generator button | H | 4hrs| 1hr |  |
+| Destructuring random gen data to appear on Joke component | H | 2hrs| 2 hr |  |
+| Building search form and button | H | 4hrs| 2 hr |  |
+| Destructuring keyword data to appear on Joke component | H | 2hrs| 3hr |  |
 | Mobile styling | H | 4hrs| |  |
 | Tablet and desktop responsive | H | 4hrs| |  |
 | Deploy via Netlify | H | 3hrs| |  |

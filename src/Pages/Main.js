@@ -11,8 +11,9 @@ const Main = (props) => {
   const [searchJoke, setSearchJoke] = React.useState(null)
 
   const getSearched = async (searchterm) => {
-    const response = await fetch(`https://icanhazdadjoke.com/search?term=${searchterm}`)
-
+    const response = await fetch(`https://icanhazdadjoke.com/search?page=1&limit=5&term=${searchterm}`,{
+        headers: {Accept: "application/json"}
+    })
     const data = await response.json()
     setSearchJoke(data)
   }
