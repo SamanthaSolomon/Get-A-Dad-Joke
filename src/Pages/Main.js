@@ -1,12 +1,15 @@
 import React from "react"
+import {Route, Redirect} from "react-router-dom"
 
 //components
 import SearchForm from "../Components/SearchForm"
 import RandomButton from "../Components/RandomButton"
 
+//pages
 import Joke from "./Joke"
 
 const Main = (props) => {
+
 //Searched Joke
   const [searchJoke, setSearchJoke] = React.useState(null)
 
@@ -27,16 +30,18 @@ const Main = (props) => {
       headers: {Accept: "application/json"}
     })
     const data = await response.json()
-    setRandomJoke(data)
+    setRandomJoke(data);
   }
 
 
     return(
         <div>
-            Welcome to Get a Dad Joke! Where you can get your dad joke fix. Search for jokes by keyword or get a random joke.
+            <p>Welcome to Get a Dad Joke! Where you can get your dad joke fix. Search for jokes by keyword or get a random joke.</p>
             <SearchForm jokeSearch={getSearched}/>
-            <RandomButton jokeRandom={getRandom}/>
-            <Joke randomJoke={randomJoke} searchJoke={searchJoke}/>
+            <RandomButton jokeRandom={getRandom} history={props.history}/>
+            <Route path="/joke" render={(renderProps) => {
+                return <Joke {...renderProps} randomJoke={randomJoke} searchJoke={searchJoke}/>
+                }}/>
         </div>
     )
 }

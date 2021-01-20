@@ -1,10 +1,13 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 const RandomButton = (props) => {
 
 const handleClick = (event) => {
     event.preventDefault()
-    props.jokeRandom()
+    props.jokeRandom();
+    props.history.push("/joke")
+    
 }   
     return (
         <div>

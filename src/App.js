@@ -19,15 +19,12 @@ function App(props) {
     <div className="App">
       <Header />
       <Switch>
-        <Route exact path="/">
-          <Main />
-        </Route> 
-        <Route path="/about">
+      <Route path="/about">
           <About />
-        </Route>
-        <Route path="/joke">  
-          <Joke />
-        </Route>
+      </Route>
+      <Route path="/" render={(renderProps) => {
+                return <Main {...renderProps}/>
+                }}/>
       </Switch> 
       <Footer />
     </div>
