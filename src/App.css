@@ -1,4 +1,65 @@
-* {
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Palanquin+Dark:wght@400;600&display=swap');
+
+:root{
+  --bg-color: #dddddd;
+  --primary-color: #30475e;
+  --para-color: #222831;
+  --link-color: #f05454;
+  --header-font: 'Palanquin Dark', sans-serif;
+  --para-font: 'Hind', sans-serif;
+}
+
+.app__background{
+  background-color: var(--bg-color);
+  padding: 8% 8% 0
+}
+
+a{
+  text-decoration: none;
+  color: none;
+  cursor: pointer;
+}
+
+
+/* Main Component */
+.para{
+  font-family: var(--para-font);
   text-align: center;
+  font-size: 1.3rem;
+}
+
+.para__emphasis{
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Header Component */
+.header__img{
+  width: 70%;
+  padding: 0 15% 0;
+}
+
+.header__h1{
+  font-family: var(--header-font);
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  color: var(--primary-color)
+}
+
+/* Footer Component */
+
+.footer__nav{
+  font-family: var(--para-font);
+  color: var(--link-color);
+  text-align: right;
+  margin-bottom: 0;
+  font-weight: lighter;
+}
+
+.footer__nav:hover{
+  color: var(--para-color);
 }
 

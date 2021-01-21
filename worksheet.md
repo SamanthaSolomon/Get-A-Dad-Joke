@@ -109,7 +109,7 @@ Desktop
 | Building Random generator button | H | 4hrs| 1hr |  |
 | Destructuring random gen data to appear on Joke component | H | 2hrs| 2 hr |  |
 | Building search form and button | H | 4hrs| 2 hr |  |
-| Destructuring keyword data to appear on Joke component | H | 2hrs| 3hr |  |
+| Destructuring keyword data to appear on Joke component | H | 2hrs| 5hr |  |
 | Mobile styling | H | 4hrs| |  |
 | Tablet and desktop responsive | H | 4hrs| |  |
 | Deploy via Netlify | H | 3hrs| |  |

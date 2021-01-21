@@ -10,13 +10,12 @@ import Header from "./Components/Header"
 
 //Pages
 import About from "./Pages/About"
-import Joke from "./Pages/Joke"
 import Main from "./Pages/Main"
 
 function App(props) {
 
   return (
-    <div className="App">
+    <div className="app__background">
       <Header />
       <Switch>
       <Route path="/about">

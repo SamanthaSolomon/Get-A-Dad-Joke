@@ -1,6 +1,9 @@
 import React from "react"
 import {Route, Redirect} from "react-router-dom"
 
+//styles
+import '../App.css';
+
 //components
 import SearchForm from "../Components/SearchForm"
 import RandomButton from "../Components/RandomButton"
@@ -36,7 +39,8 @@ const Main = (props) => {
 
     return(
         <div>
-            <p>Welcome to Get a Dad Joke! Where you can get your dad joke fix. Search for jokes by keyword or get a random joke.</p>
+            <p className="para">Preparing for a BBQ with the neighbors?<br></br> One of your kids having a sleepover? <br></br>Maybe your just taking a trip to the hardware store for some ducktape and nails. <br></br></p>
+            <p className="para">Whatever the situation, we've got your dad joke needs covered. <span class="para__emphasis">Search for jokes by keyword.</span> <br></br>Feeling looser than a bathing suit from the 80s? <br></br><span class="para__emphasis">Get a random joke.</span></p>
             <SearchForm jokeSearch={getSearched}/>
             <RandomButton jokeRandom={getRandom} history={props.history}/>
             <Route path="/joke" render={(renderProps) => {
