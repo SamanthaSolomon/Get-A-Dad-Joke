@@ -10,8 +10,8 @@ const handleClick = (event) => {
     
 }   
     return (
-        <div>
-            <button onClick={handleClick}>Get Random Joke</button>
+        <div className="random-button">
+            <button className="random-button__button" onClick={handleClick}>Get Random Joke</button>
         </div>
     )
 }
