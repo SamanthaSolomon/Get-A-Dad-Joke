@@ -15,6 +15,10 @@
   padding: 8% 8% 0
 }
 
+.app__footer{
+  background-color: var(--primary-color);
+}
+
 a{
   text-decoration: none;
   color: none;
@@ -53,16 +57,21 @@ a{
 
 /* Footer Component */
 
+.footer{
+  padding: 10% 5% 5% 0%
+}
+
 .footer__nav{
   font-family: var(--para-font);
-  color: var(--primary-color);
+  color: var(--link-color);
   text-align: right;
   margin-bottom: 0;
   font-weight: lighter;
+  font-size: 1rem;
 }
 
 .footer__nav:hover{
-  color: var(--link-color);
+  color: var(--bg-color);
 }
 
 /* Form Component */
@@ -116,7 +125,7 @@ a{
   font-family: var(--header-font);
   color: var(--primary-color);
   padding: 0% 5%;
-  margin: 5% 0 5% 0;
+  margin: 5% 0 10% 0;
   border-radius: 4%;
 }
 
@@ -124,4 +133,30 @@ a{
   background-color: var(--primary-color);
   color: var(--link-color);
   cursor: pointer;
+}
+
+/* Joke Component */
+.joke{
+  margin-bottom: 10%;
+}
+
+.joke__searched{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.joke__searched--li{
+  font-family: var(--para-font);
+  color: var(--para-font);
+  font-size: 1rem;
+  padding-bottom: 7%;
+}
+
+.joke__random{
+  font-family: var(--para-font);
+  color: var(--para-font);
+  font-size: 1rem;
+  margin-top: 0;
+  padding-top: 0;
 }

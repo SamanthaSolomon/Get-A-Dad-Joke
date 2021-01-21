@@ -5,9 +5,9 @@ const Joke = (props) => {
     const loaded = () => {
         return (
             <div>
-                <ul>
+                <ul className="joke__searched">
                     {props.searchJoke.results.map((jokes) => {
-                            return <li key={jokes.id}>{jokes.joke}</li>
+                            return <li className="joke__searched--li"key={jokes.id}>{jokes.joke}</li>
                     }
                     )}
                 </ul>
@@ -17,21 +17,22 @@ const Joke = (props) => {
 
     const loading = () => {
         return(
-            <h4>No jokes to display. Try another term.</h4>
+            <div></div>
         )
     }
 
     //terinary operator displaying loaded or loading functions if the searchJoke state includes an array of 1 or more
     const list = props?.searchJoke?.results?.length > 0 ? loaded() : loading()
     //terinary operator displaying element if the randomJoke state includes an object
-    const random = props?.randomJoke ? <h4>{props.randomJoke.joke}</h4> : null
+    const random = props?.randomJoke ? 
+                    <p className="joke__random">{props.randomJoke.joke}</p> : null
    
 
     return (
-        <>
+        <div className="joke">
             {list}
             {random}
-        </>)
+        </div>)
 
 }
 
