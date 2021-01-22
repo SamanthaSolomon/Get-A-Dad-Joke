@@ -39,8 +39,9 @@ const Main = (props) => {
 
 
     return(
-        <div>
-            <p className="para">
+        <div className="main">
+          <div className="main__para">
+            <p>
             Preparing for a BBQ with the neighbors?
             <br></br> 
             One of your kids having a sleepover? 
@@ -48,10 +49,11 @@ const Main = (props) => {
             Maybe you're just taking a trip to the hardware store for some ducktape and nails.
             <br></br>
             </p>
-            <p className="para">Whatever the situation, this app's got your dad joke needs covered.<span class="para__emphasis"> Search for jokes by keyword.</span> 
-            <br></br>
-            Feeling looser than a bathing suit from the 80s? <br></br>
-            <span class="para__emphasis">Get a random joke.</span></p>
+            <p>Whatever the situation, this app's got your dad joke needs covered.</p>
+            <p><span class="para__emphasis"> Search for jokes by keyword.</span></p> 
+            <p>Feeling looser than a bathing suit from the 80s? </p>
+            <p><span class="para__emphasis">Get a random joke.</span></p>
+            </div>
             <Route path="/joke" render={(renderProps) => {
                 return <Joke {...renderProps} randomJoke={randomJoke} searchJoke={searchJoke}/>
                 }}/>

@@ -19,7 +19,6 @@ const SearchForm = (props) => {
     }
 
     return(
-        <div>
             <form className="form" onSubmit={handleSubmit}>
                 <input
                 className="form__searchbar" 
@@ -33,7 +32,6 @@ const SearchForm = (props) => {
                     type="submit" 
                     value="Search Jokes"/>
             </form>
-        </div>
     )
 }
 

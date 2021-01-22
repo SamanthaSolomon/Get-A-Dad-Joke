@@ -23,7 +23,7 @@ a{
 
 
 /* Main Component */
-.para{
+.main__para{
   font-family: var(--para-font);
   text-align: center;
   font-size: 1.3rem;
@@ -175,4 +175,135 @@ a{
 
 .about__p a:hover{
   color: var(--link-color)
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px){
+
+  /* Header Component */
+  .header__h1{
+    font-size: 4rem;
+  }
+
+  /*Search Component*/
+  .form__searchbutton{
+    padding: 3% 8%;
+    font-size: 1.7rem;
+  }
+
+  /*Random Component*/
+  .random-button__button{
+    padding: 3% 8%;
+    font-size: 1.7rem;
+  }
+
+  /*Joke Component*/
+  .joke__searched--li{
+    font-size: 1.5rem;
+  }
+  
+  .joke__random{
+    font-size: 1.5rem;
+  }
+
+  /*Footer Component*/
+  .footer__nav{
+    font-size: 1.5rem;
+  }
+
+  /*About Component*/
+  .about__p{
+    font-size: 1.5rem;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px){
+
+  .app__background{
+    padding: 3%
+  }
+  
+  
+  /*header component*/
+  .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+
+  .header__img{
+    width: 40%;
+    padding: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+  }
+
+  .header__h1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
+    align-self: center;
+    font-size: 5rem;
+  }
+
+  /*Main Component*/
+
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .main__para{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    text-align: left;
+  }
+
+  /*Search Component*/
+  .form{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  /*Random Button Component*/
+  .random-button{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  /*Joke Component*/
+  .joke{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+  }
+
+  /*Footer Component*/
+  .app__footer{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: stretch;
+  }
+
+  .footer__nav{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+  }
+
 }
