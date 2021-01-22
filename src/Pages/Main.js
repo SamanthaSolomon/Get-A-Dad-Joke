@@ -7,6 +7,7 @@ import '../App.css';
 //components
 import SearchForm from "../Components/SearchForm"
 import RandomButton from "../Components/RandomButton"
+import Footer from "../Components/Footer"
 
 //pages
 import Joke from "./Joke"
@@ -39,13 +40,26 @@ const Main = (props) => {
 
     return(
         <div>
-            <p className="para">Preparing for a BBQ with the neighbors?<br></br> One of your kids having a sleepover? <br></br>Maybe your just taking a trip to the hardware store for some ducktape and nails. <br></br></p>
-            <p className="para">Whatever the situation, we've got your dad joke needs covered. <span class="para__emphasis">Search for jokes by keyword.</span> <br></br>Feeling looser than a bathing suit from the 80s? <br></br><span class="para__emphasis">Get a random joke.</span></p>
-            <SearchForm jokeSearch={getSearched}/>
-            <RandomButton jokeRandom={getRandom} history={props.history}/>
+            <p className="para">
+            Preparing for a BBQ with the neighbors?
+            <br></br> 
+            One of your kids having a sleepover? 
+            <br></br>
+            Maybe you're just taking a trip to the hardware store for some ducktape and nails.
+            <br></br>
+            </p>
+            <p className="para">Whatever the situation, this app's got your dad joke needs covered.<span class="para__emphasis"> Search for jokes by keyword.</span> 
+            <br></br>
+            Feeling looser than a bathing suit from the 80s? <br></br>
+            <span class="para__emphasis">Get a random joke.</span></p>
             <Route path="/joke" render={(renderProps) => {
                 return <Joke {...renderProps} randomJoke={randomJoke} searchJoke={searchJoke}/>
                 }}/>
+            <SearchForm jokeSearch={getSearched}/>
+            <RandomButton jokeRandom={getRandom} history={props.history}/>
+            <div className="app__footer">
+              <Footer />
+            </div>
         </div>
     )
 }

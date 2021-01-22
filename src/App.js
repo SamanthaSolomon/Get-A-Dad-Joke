@@ -5,7 +5,6 @@ import { Route, Switch } from "react-router-dom"
 import './App.css';
 
 //Components
-import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 
 //Pages
@@ -26,9 +25,6 @@ function App(props) {
                   return <Main {...renderProps}/>
                   }}/>
         </Switch>
-      </div>
-      <div className="app__footer">
-        <Footer />
       </div>
     </div>
   );

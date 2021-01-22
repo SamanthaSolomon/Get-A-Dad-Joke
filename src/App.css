@@ -15,10 +15,6 @@
   padding: 8% 8% 0
 }
 
-.app__footer{
-  background-color: var(--primary-color);
-}
-
 a{
   text-decoration: none;
   color: none;
@@ -58,20 +54,20 @@ a{
 /* Footer Component */
 
 .footer{
-  padding: 10% 5% 5% 0%
+  padding: 5% 5% 5% 0%
 }
 
 .footer__nav{
   font-family: var(--para-font);
-  color: var(--link-color);
-  text-align: right;
+  color: var(--primary-color);
+  text-align: center;
   margin-bottom: 0;
   font-weight: lighter;
   font-size: 1rem;
 }
 
 .footer__nav:hover{
-  color: var(--bg-color);
+  color: var(--link-color);
 }
 
 /* Form Component */
@@ -138,6 +134,9 @@ a{
 /* Joke Component */
 .joke{
   margin-bottom: 10%;
+  background-color: rgba(240, 84, 84, 0.6);
+  padding: 5%;
+  border-radius: 4%;
 }
 
 .joke__searched{
@@ -159,4 +158,21 @@ a{
   font-size: 1rem;
   margin-top: 0;
   padding-top: 0;
+}
+
+/* About Component */
+.about__p{
+  font-family: var(--para-font);
+  color: var(--para-font);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.about__p a{
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.about__p a:hover{
+  color: var(--link-color)
 }
