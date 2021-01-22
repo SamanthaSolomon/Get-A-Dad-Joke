@@ -14,8 +14,8 @@ const SearchForm = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault()
         props.jokeSearch(formData.searchterm)
-        // props.history.push("/joke")
         setFormData({searchterm: ""})
+        props.history.push("/joke")
         
 
     }

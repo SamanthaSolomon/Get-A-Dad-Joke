@@ -51,6 +51,10 @@ a{
   cursor: pointer;
 }
 
+.header__h1:hover{
+  color: var(--link-color);
+}
+
 /* Footer Component */
 
 .footer{
@@ -97,7 +101,7 @@ a{
   font-size: 1.5rem;
   font-family: var(--header-font);
   color: var(--primary-color);
-  padding: 0% 5%;
+  padding: 3% 5%;
   margin: 5% 0 5% 0;
   border-radius: 4%;
 }
@@ -120,7 +124,7 @@ a{
   font-size: 1.5rem;
   font-family: var(--header-font);
   color: var(--primary-color);
-  padding: 0% 5%;
+  padding: 3% 5%;
   margin: 5% 0 10% 0;
   border-radius: 4%;
 }

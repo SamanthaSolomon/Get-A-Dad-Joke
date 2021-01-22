@@ -57,7 +57,7 @@ const Main = (props) => {
             <Route path="/joke" render={(renderProps) => {
                 return <Joke {...renderProps} randomJoke={randomJoke} searchJoke={searchJoke}/>
                 }}/>
-            <SearchForm jokeSearch={getSearched}/>
+            <SearchForm jokeSearch={getSearched} history={props.history}/>
             <RandomButton jokeRandom={getRandom} history={props.history}/>
             <div className="app__footer">
               <Footer />
