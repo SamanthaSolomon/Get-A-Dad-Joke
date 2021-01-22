@@ -14,7 +14,9 @@ const SearchForm = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault()
         props.jokeSearch(formData.searchterm)
+        // props.history.push("/joke")
         setFormData({searchterm: ""})
+        
 
     }
 
@@ -30,7 +32,7 @@ const SearchForm = (props) => {
                 <input
                     className="form__searchbutton" 
                     type="submit" 
-                    value="Search Jokes"/>
+                    value="Search Joke"/>
             </form>
     )
 }

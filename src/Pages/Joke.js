@@ -7,7 +7,7 @@ const Joke = (props) => {
             <div>
                 <ul className="joke__searched">
                     {props.searchJoke.results.map((jokes) => {
-                            return <li className="joke__searched--li"key={jokes.id}>{jokes.joke}</li>
+                            return ( <li className="joke__searched--li" key={jokes.id}>{jokes.joke}</li> )
                     }
                     )}
                 </ul>
